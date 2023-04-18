@@ -1,16 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {Box} from '@mui/material';
-import Feed from './components/Feed'
-import Navbar from './components/Navbar';
-import Channel from './components/Channel';
-import Video from './components/Video';
-import Search from './components/SearchFeed';
+import {Navbar,Feed,Channel,Search,Video} from './components'
 
 
-const app = () => (
+const App = () => (
     <BrowserRouter>
-        <Box>
+        <Box sx={{backgroundColor: '#000'}}>
             <Navbar/>
             <Routes>
                 <Route path='/' exact element= {<Feed /> } />
@@ -22,4 +18,4 @@ const app = () => (
     </BrowserRouter>
 );
 
-export default app
+export default App

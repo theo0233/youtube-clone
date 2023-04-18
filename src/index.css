@@ -8,3 +8,10 @@ body {
     text-decoration: none;
     color: black;
   }
+
+  .search-bar{
+    border:none;
+    outline:none;
+    width:300px;
+  }
+  
