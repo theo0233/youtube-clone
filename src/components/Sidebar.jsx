@@ -1,6 +1,6 @@
 import React from 'react'
 import  {Stack} from '@mui/material'
-import { Categories, categories } from '../utilities/constants';
+import { categories } from '../utilities/constants';
 
 
 
@@ -18,6 +18,7 @@ const Sidebar = ({selectedCategory,setSelectedCategory}) => {
     <button 
     style= {{background : Category.name === selectedCategory && '#FC1503', color: "white"}}
     className='category-btn'
+    onClick={() => setSelectedCategory(Category.name)}
     key={Category.name}
     >
         <span style = {{ color: Category.name === selectedCategory ? "white" : "red" , marginRight: '15px'}}>
